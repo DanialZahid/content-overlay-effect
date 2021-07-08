@@ -39,7 +39,7 @@ const modalContent = `
 
 <h2>License</h2>
 
-<p><a title="MIT" href="https://github.com/DanialZahid/Image-Cards-With-Content-Overlay/blob/Main/LICENSE/">MIT</a></p>
+<p><a title="MIT" href="https://github.com/DanialZahid/Image-Cards-With-Content-Overlay/blob/main/LICENSE/">MIT</a></p>
 
 </div>
 </section>
