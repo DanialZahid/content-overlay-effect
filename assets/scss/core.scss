@@ -1,0 +1,76 @@
+.cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	cursor: default;
+	width: 100%;
+
+	> :last-child {
+		grid-column: span 2;
+	}
+}
+
+.card {
+	display: flex;
+	position: relative;
+	flex-flow: column wrap;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+	img {
+		transition: all 300ms ease-in-out;
+	}
+
+	&:hover img {
+		transform: scale(1.1);
+	}
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	padding: 2rem;
+	background: linear-gradient(#535c68, rgba(83, 92, 104, 0.7), rgba(83, 92, 104, 0.5));
+	animation: overlayVisible 500ms ease-in-out;
+	display: none;
+}
+
+.overlay-visible {
+	display: flex;
+}
+
+.button {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 700;
+	background: hsl(222, 66%, 50%);
+	padding: 1.5rem;
+	transition: all 300ms ease-in-out;
+	border-radius: 5px;
+
+	&:hover,
+	&:focus {
+		background: hsl(222, 66%, 45%);
+	}
+
+	&:active {
+		background: hsl(222, 66%, 40%);
+	}
+}
+
+@keyframes overlayVisible {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,41 @@
+@media (max-width: 1024px) {
+	.cards-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+
+	.cards-wrapper {
+		grid-template-columns: auto;
+	}
+
+	.button {
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		padding: 1rem;
+	}
+
+	.cards-wrapper {
+		grid-template-columns: auto;
+
+		img {
+			height: 30vh;
+		}
+
+		> :last-child {
+			grid-column: auto;
+		}
+	}
+}
