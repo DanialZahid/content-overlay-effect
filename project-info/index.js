@@ -34,7 +34,7 @@ const piModalContent = `
 
 		<h3>Description</h3>
 
-		<p>A simple app which shows content when hovered over the image cards. It's responsive to different screen sizes.</p>
+		<p>A simple app which shows content when hovered over on the image cards. It's responsive to different screen sizes.</p>
 
 		<ul>
 			<li><a title="On my website" href="https://content-overlay.iamdanial.com/">On my website</a></li>
