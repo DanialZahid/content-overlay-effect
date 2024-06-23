@@ -1,12 +1,12 @@
-# Image Cards With Content Overlay
+# Content Overlay Effect
 
 ## Description
 
 Responsive image cards with content overlay on hover.
 
-- [On my website](https://content-overlay.iamdanial.com/)
-- [On GitHub](https://github.com/DanialZahid/Image-Cards-With-Content-Overlay/)
-- [On CodePen](https://codepen.io/danialzahid/pen/vYmBGZX/)
+- [View on Vercel](https://content-overlay-effect.vercel.app/)
+- [View on GitHub](https://github.com/DanialZahid/content-overlay-effect)
+- [View on CodePen](https://codepen.io/danialzahid/pen/vYmBGZX/)
 
 ## License
 
