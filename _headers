@@ -1,0 +1,6 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: object-src 'none'; frame-ancestors 'none'
+  Permissions-Policy: camera=(), geolocation=(), microphone=()

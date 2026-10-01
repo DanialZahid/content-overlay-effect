@@ -1,4 +1,4 @@
-const piBody = document.querySelector("body");
+const piBody = document.querySelector('body');
 
 // Create icons.
 
@@ -16,9 +16,9 @@ const piFloatContent = `${piIconInfo}<p>Project Info</p>`;
 
 // Create floater and append float content to it.
 
-const piFloat = document.createElement("div");
-piFloat.classList.add("pi-float");
-piFloat.setAttribute("title", "See info about this project.");
+const piFloat = document.createElement('div');
+piFloat.classList.add('pi-float');
+piFloat.setAttribute('title', 'See info about this project.');
 piFloat.innerHTML = piFloatContent;
 piBody.append(piFloat);
 
@@ -37,7 +37,7 @@ const piModalContent = `
 		<p>A simple app which shows content when hovered over on the image cards. It's responsive to different screen sizes.</p>
 
 		<ul>
-			<li><a title="View on Vercel" href="https://content-overlay-effect.vercel.app/">View on Vercel</a></li>
+			<li><a title="View on Cloudflare Pages" href="https://content-overlay-effect.pages.dev/">View on Cloudflare Pages</a></li>
 			<li><a title="View on GitHub" href="https://github.com/DanialZahid/content-overlay-effect">View on GitHub</a></li>
 			<li><a title="View on CodePen" href="https://codepen.io/danialzahid/pen/vYmBGZX/">View on CodePen</a></li>
 		</ul>
@@ -52,30 +52,30 @@ const piModalContent = `
 
 // Create modal and append modal content to it.
 
-const piModal = document.createElement("div");
-piModal.classList.add("pi-modal-wrapper");
+const piModal = document.createElement('div');
+piModal.classList.add('pi-modal-wrapper');
 piModal.innerHTML = piModalContent;
-piFloat.addEventListener("click", piDisplay); // Display modal when clicked on floater.
+piFloat.addEventListener('click', piDisplay); // Display modal when clicked on floater.
 
 // Display modal function.
 
 function piDisplay() {
-	piBody.append(piModal);
-	piModal.classList.add("pi-modal-display");
-	piBody.setAttribute("class", "pi-overflow-hidden"); // Hide browser scroll when modal is shown.
-	const piModalCloseBtn = document.querySelector(".pi-icon-close"); // Close modal when clicked on close icon.
-	piModalCloseBtn.addEventListener("click", piRemove);
+  piBody.append(piModal);
+  piModal.classList.add('pi-modal-display');
+  piBody.setAttribute('class', 'pi-overflow-hidden'); // Hide browser scroll when modal is shown.
+  const piModalCloseBtn = document.querySelector('.pi-icon-close'); // Close modal when clicked on close icon.
+  piModalCloseBtn.addEventListener('click', piRemove);
 }
 
 // Remove modal function.
 
 function piRemove() {
-	piModal.classList.remove("pi-modal-display");
-	piBody.removeAttribute("class");
+  piModal.classList.remove('pi-modal-display');
+  piBody.removeAttribute('class');
 
-	setTimeout(function () {
-		piModal.remove();
-	}, 500); // Wait .5s before removing modal so it completes its animation.
+  setTimeout(function () {
+    piModal.remove();
+  }, 500); // Wait .5s before removing modal so it completes its animation.
 }
 
 /* Attributions
